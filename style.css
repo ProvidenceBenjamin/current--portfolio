@@ -1,0 +1,1284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  float: inline-start;
+  background-color: black;
+  z-index: 100000px;
+}
+nav label.logo {
+  color: gold;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 80px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav a {
+  color: gold;
+  padding: 7px 13px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav a:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+nav .checkbtn {
+  font-size: 30px;
+  display: none;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+nav #check {
+  display: none;
+}
+@media (max-width: 858px) {
+  nav {
+    z-index: 1000;
+  }
+  nav .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2c3e50;
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+    text-align: center;
+  }
+  nav nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  nav a:hover, nav a.active {
+    background: black;
+    color: white;
+  }
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  background-image: url(./img/Silk_Sheet_Wall_Paper_Effect.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.hero .pic img {
+  width: 100%;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+  margin-top: 120px;
+}
+.hero .pro {
+  line-height: 1.4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 45px;
+}
+.hero h1 {
+  color: gold;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+.hero h3 {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.hero p {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: gold;
+}
+.hero #but {
+  padding: 15px 36px;
+  margin: 0 94px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  border-color: white;
+}
+.hero #but:hover {
+  content: "Send an Email";
+}
+
+.one {
+  position: relative;
+  margin: 0 20px;
+  margin-bottom: 35px;
+  display: flex;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid goldenrod;
+  border-bottom: none;
+  padding-top: 20px;
+  background-color: #ffffff;
+  padding-bottom: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.one #b {
+  text-decoration: none;
+}
+.one #a {
+  text-decoration: none;
+}
+.one h2 {
+  padding: 20px 0;
+}
+.one .item {
+  background-image: url(./img/Frame\ 2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  margin: 20px 0;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.one .item a .item {
+  background-image: url(./img/Frame\ 2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  margin: 20px 0;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.one .item a .items {
+  background-image: url(./img/Frame\ 1.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-position: center;
+  width: 100%;
+  margin: 20px 0;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.one .item a .itemer {
+  background-image: url(./img/Frame\ 3.png);
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin: 20px 0;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.one .item a .itemer a {
+  text-decoration: none;
+}
+.one .items {
+  background-image: url(./img/Frame\ 1.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-position: center;
+  width: 100%;
+  margin: 20px 0;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.one .itemer {
+  background-image: url(./img/Frame\ 3.png);
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin: 20px 0;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.one h3 {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.one p {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(175, 171, 166);
+}
+.one .item a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.one .item a:hover {
+  background-color: goldenrod;
+}
+.one #a,
+.one #b {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  margin: 10px 80px;
+  padding: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  transition: 2s;
+  background-color: 0.5s;
+  color: 0.5s;
+}
+.one #a:hover,
+.one #b:hover {
+  background-color: goldenrod;
+  color: black;
+}
+.one #a:hover ~ #n,
+.one #b:hover ~ #no {
+  background-color: goldenrod;
+}
+.one .non {
+  display: flex;
+  justify-content: center;
+}
+.one .non #n {
+  background-color: beige;
+  margin: 20px 10px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  height: 15px;
+}
+.one .non #no {
+  background-color: goldenrod;
+  margin: 20px 10px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  height: 15px;
+}
+.one #s {
+  position: absolute;
+  right: 38%;
+  bottom: 65px;
+  color: #ffffff;
+}
+.one #s:hover {
+  text-decoration: underline;
+}
+.one #y {
+  position: absolute;
+  right: 10%;
+  bottom: 65px;
+  color: #ffffff;
+}
+.one #y:hover {
+  text-decoration: underline;
+}
+
+.skills {
+  background-color: #2c3e50;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.skills h2 {
+  color: white;
+  padding-bottom: 20px;
+}
+.skills h2 {
+  text-align: center;
+}
+.skills h5 {
+  position: absolute;
+  bottom: 0px;
+}
+.skills .profencies {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  background-image: url(./img/proficiency.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+.skills .profencies .black {
+  z-index: 2;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.skills .profencies .black h5 {
+  color: white;
+}
+.skills .profencies .overlays {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.76);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.6s ease;
+}
+.skills .profencies:hover .overlays {
+  height: 100%;
+  border-radius: 19px;
+}
+.skills .profencies:hover .black {
+  opacity: 0;
+}
+.skills .design {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  background-image: url(./img/UX\ UI.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+.skills .design .black {
+  z-index: 2;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.skills .design .black h5 {
+  color: white;
+}
+.skills .design .overlays {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.76);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.6s ease;
+}
+.skills .design:hover .overlays {
+  height: 100%;
+  border-radius: 19px;
+}
+.skills .design:hover .black {
+  opacity: 0;
+}
+.skills .development {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  background-image: url(./img/dev\ 2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+.skills .development .black {
+  z-index: 2;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.skills .development .black h5 {
+  color: white;
+}
+.skills .development .overlays {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.76);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.6s ease;
+}
+.skills .development:hover .overlays {
+  height: 100%;
+  border-radius: 19px;
+}
+.skills .development:hover .black {
+  opacity: 0;
+}
+.skills .marketing {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  background-image: url(./img/Digital\ Marketing.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+.skills .marketing .black {
+  z-index: 2;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.skills .marketing .black h5 {
+  color: white;
+}
+.skills .marketing .overlays {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.76);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.6s ease;
+}
+.skills .marketing:hover .overlays {
+  height: 100%;
+  border-radius: 19px;
+}
+.skills .marketing:hover .black {
+  opacity: 0;
+}
+
+@media (min-width: 375px) {
+  .three #card-area .wrapper .box-area {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .three #card-area .wrapper .box-area .box {
+    width: 100%;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: goldenrod;
+  }
+}
+@media (min-width: 414px) {
+  .three #card-area .wrapper .box-area .box {
+    width: calc(25% - 20px);
+  }
+}
+.zero {
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+.zero .up img {
+  display: flex;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 50vh;
+  margin: auto;
+}
+.zero hr {
+  border: 1px solid black;
+  background-color: black;
+  z-index: 100;
+  width: 120px;
+}
+.zero #pp {
+  background-color: white;
+  border: 1px solid goldenrod;
+  padding: 5px 30px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+.zero #pp {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.zero p span {
+  color: gold;
+}
+
+.foot {
+  background-image: url(./img/85c03d87-164d-46f3-837b-8abc4835900f.jpg);
+  text-align: left;
+  padding-top: 50px;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.foot .foot-iterm {
+  display: flex;
+  padding: 10px;
+}
+.foot .foot-iterm h4 {
+  margin: 0 20px;
+}
+.foot h2 {
+  padding-top: 50px;
+  color: gold;
+}
+.foot p span {
+  color: gold;
+}
+.foot #s {
+  text-align: center;
+  padding: 20px 0;
+}
+.foot .hr {
+  border: 1px solid white;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    float: inline-start;
+    z-index: 1000;
+  }
+  nav label.logo {
+    color: gold;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 80px;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav a {
+    color: gold;
+    padding: 7px 13px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  nav a:hover {
+    background-color: coral;
+    transition: 0.5s;
+  }
+  nav .checkbtn {
+    font-size: 30px;
+    display: none;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  nav #check {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 858px) {
+  nav .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2c3e50;
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+    text-align: center;
+  }
+  nav nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  nav a:hover, nav a.active {
+    background: none;
+    color: #0082e6;
+  }
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/Silk_Sheet_Wall_Paper_Effect.jpg);
+    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+  }
+  .hero .pic img {
+    margin-top: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 30px;
+  }
+  .hero .pro {
+    line-height: 1.4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .hero h1 {
+    color: gold;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 100px;
+  }
+  .hero h3 {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  .hero p {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: gold;
+  }
+  .hero #but {
+    padding: 15px 50px;
+    margin: 0 70px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-color: white;
+  }
+  .hero #but:hover {
+    content: "Send an Email";
+  }
+  .one {
+    position: relative;
+    margin: 0 20px;
+    display: flex;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid goldenrod;
+    border-bottom: none;
+    padding-top: 20px;
+    background-color: #ffffff;
+    padding-bottom: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  .one h2 {
+    padding: 20px 0;
+  }
+  .one .item {
+    background-image: url(./img/Frame\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    margin: 20px 0;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .one .items {
+    background-image: url(./img/Frame\ 1.png);
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-position: center;
+    width: 100%;
+    margin: 20px 0;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .one .itemer {
+    background-image: url(./img/Frame\ 3.png);
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 20px 0;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .one h3 {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .one p {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(175, 171, 166);
+  }
+  .one .item a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+  .one #a {
+    background-color: goldenrod;
+    color: black;
+    border-radius: 20px;
+    margin: 10px 8px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .one #b {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    margin: 10px 8px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .one .non {
+    display: flex;
+    justify-content: center;
+  }
+  .one .non #n {
+    background-color: beige;
+    margin: 20px 10px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    height: 15px;
+  }
+  .one .non #no {
+    background-color: goldenrod;
+    margin: 20px 10px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    height: 15px;
+  }
+  .one #s {
+    position: absolute;
+    right: 38%;
+    bottom: 65px;
+    color: #ffffff;
+  }
+  .one #s:hover {
+    text-decoration: underline;
+  }
+  .one #y {
+    position: absolute;
+    right: 10%;
+    bottom: 65px;
+    color: #ffffff;
+  }
+  .one #y:hover {
+    text-decoration: underline;
+  }
+  .zero {
+    margin-top: 50px;
+    padding-bottom: 30px;
+  }
+  .zero .up img {
+    display: flex;
+    border-radius: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 75vh;
+    margin: auto;
+  }
+  .zero hr {
+    border: 1px solid black;
+    background-color: black;
+    z-index: 100;
+    width: 120px;
+  }
+  .zero #pp {
+    background-color: white;
+    border: 1px solid goldenrod;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-bottom: 20px;
+  }
+  .zero #pp {
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .zero p span {
+    color: gold;
+  }
+  .foot {
+    background-image: url(./img/85c03d87-164d-46f3-837b-8abc4835900f.jpg);
+    text-align: left;
+    padding-top: 50px;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .foot .foot-iterm {
+    display: flex;
+    padding: 10px;
+  }
+  .foot .foot-iterm h4 {
+    margin: 0 20px;
+  }
+  .foot h2 {
+    padding-top: 50px;
+    color: gold;
+  }
+  .foot p span {
+    color: gold;
+  }
+  .foot #s {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .foot .hr {
+    border: 1px solid white;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+    z-index: 10000;
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/Silk_Sheet_Wall_Paper_Effect.jpg);
+    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+  }
+  .hero .pic img {
+    width: 90%;
+    display: flex;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 10px;
+  }
+  .hero .pro {
+    line-height: 1.4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .hero h1 {
+    color: gold;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .hero h3 {
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+  .hero p {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: gold;
+  }
+  .hero #but {
+    padding: 15px 50px;
+    margin: 0 130px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-color: gold;
+  }
+  .hero #but:hover {
+    background-color: white;
+    content: "Send an Email";
+    color: black;
+    filter: drop-shadow(0 0 25px gold);
+  }
+  .one {
+    position: relative;
+    margin: 0 20px;
+    display: flex;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid goldenrod;
+    border-bottom: none;
+    padding-top: 20px;
+    background-color: #ffffff;
+    padding-bottom: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  .one h2 {
+    padding: 20px 0;
+  }
+  .one h3 {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .one p {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(175, 171, 166);
+  }
+  .one .item a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .one .item a:hover {
+    background-color: goldenrod;
+  }
+  .one #a,
+  .one #b {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    margin: 10px 80px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: 2s;
+    background-color: 0.5s;
+    color: 0.5s;
+  }
+  .one #a:hover,
+  .one #b:hover {
+    background-color: goldenrod;
+    color: black;
+  }
+  .one #a:hover ~ #n,
+  .one #b:hover ~ #no {
+    background-color: goldenrod;
+  }
+  .one .non {
+    display: flex;
+    justify-content: center;
+  }
+  .one .non #n {
+    background-color: beige;
+    margin: 20px 10px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    height: 15px;
+  }
+  .one .non #no {
+    background-color: goldenrod;
+    margin: 20px 10px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    height: 15px;
+  }
+  .zero {
+    margin-top: 50px;
+    padding-bottom: 30px;
+  }
+  .zero .up img {
+    display: flex;
+    border-radius: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    transition: 1s;
+  }
+  .zero .up img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 30px black);
+  }
+  .zero hr {
+    border: 1px solid black;
+    background-color: black;
+    z-index: 100;
+    width: 120px;
+  }
+  .zero #pp {
+    background-color: white;
+    border: 1px solid goldenrod;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: lighter;
+  }
+  .zero #pp {
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .zero p span {
+    color: gold;
+  }
+  .foot {
+    background-image: url(./img/85c03d87-164d-46f3-837b-8abc4835900f.jpg);
+    text-align: left;
+    padding-top: 50px;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .foot .foot-iterm {
+    display: flex;
+    padding: 10px;
+  }
+  .foot .foot-iterm h4 {
+    margin: 0 20px;
+  }
+  .foot h2 {
+    padding-top: 50px;
+    color: gold;
+  }
+  .foot p span {
+    color: gold;
+  }
+  .foot #s {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .foot .hr {
+    border: 1px solid white;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
